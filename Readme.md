@@ -1,5 +1,5 @@
 ## About the Project
-![Uploading image.png…]()
+![Argo CD Application](images/app-details.png)
 
 This project demonstrates how **Argo CD** integrates with **Helm** to implement a GitOps-based deployment workflow for Kubernetes applications.
 
