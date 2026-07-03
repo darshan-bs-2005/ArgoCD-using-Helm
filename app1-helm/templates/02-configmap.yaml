@@ -1,3 +1,4 @@
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -6,30 +7,30 @@ metadata:
 data:
   index.html: |
     <!DOCTYPE html>
-<html>
-<head>
-    <title>Argo CD Using Helm</title>
-</head>
-<body>
-    <h1>Argo CD Using Helm</h1>
+    <html>
+    <head>
+        <title>Argo CD Using Helm</title>
+    </head>
+    <body>
+        <h1>Argo CD Using Helm</h1>
 
-    <p><strong>Argo CD</strong> is a GitOps tool that keeps Kubernetes clusters in sync with Git.</p>
+        <p><strong>Argo CD</strong> is a GitOps tool that keeps Kubernetes clusters in sync with Git.</p>
 
-    <p><strong>Helm</strong> is a package manager for Kubernetes. It uses templates to generate Kubernetes YAML files.</p>
+        <p><strong>Helm</strong> is a package manager for Kubernetes. It uses templates to generate Kubernetes YAML files.</p>
 
-    <h2>How Argo CD uses Helm</h2>
-    <ol>
-        <li>Argo CD reads the Helm chart from a Git repository.</li>
-        <li>Helm renders the chart templates into Kubernetes YAML manifests.</li>
-        <li>Argo CD compares the generated YAML with the cluster.</li>
-        <li>If there are differences, Argo CD applies the changes to the cluster.</li>
-    </ol>
+        <h2>How Argo CD uses Helm</h2>
+        <ol>
+            <li>Argo CD reads the Helm chart from a Git repository.</li>
+            <li>Helm renders the chart templates into Kubernetes YAML manifests.</li>
+            <li>Argo CD compares the generated YAML with the cluster.</li>
+            <li>If there are differences, Argo CD applies the changes to the cluster.</li>
+        </ol>
 
-    <h2>Important Point</h2>
-    <p>Argo CD uses Helm only to <strong>render (generate)</strong> the YAML files. It does <strong>not</strong> use Helm to install or manage the release.</p>
+        <h2>Important Point</h2>
+        <p>Argo CD uses Helm only to <strong>render (generate)</strong> the YAML files. It does <strong>not</strong> use Helm to install or manage the release.</p>
 
-    <h2>Flow</h2>
-    <p>Git Repository → Helm Chart → Helm Renders YAML → Argo CD → Kubernetes Cluster</p>
+        <h2>Flow</h2>
+        <p>Git Repository → Helm Chart → Helm Renders YAML → Argo CD → Kubernetes Cluster</p>
 
-</body>
-</html>
+    </body>
+    </html>
